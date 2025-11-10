@@ -29,9 +29,18 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
+    const gameCollection = client.db('gameDB').collection('game');
+    
+
+
+
+
+
     app.post('/game' , async(req , res)=>{
       const newGame = req.body;
       console.log(newGame);
+      const result = await gameCollection.insertOne(newGame);
+      res.send(result);
       
     } )
 
