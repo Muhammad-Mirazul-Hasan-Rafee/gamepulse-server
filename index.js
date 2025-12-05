@@ -146,7 +146,7 @@ async function run() {
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
-  res.send("Chill-Gamer swever is running");
+  res.send("Chill-Gamer server is running");
 });
 
 app.listen(port, () => {
