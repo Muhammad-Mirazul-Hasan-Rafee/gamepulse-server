@@ -82,7 +82,7 @@ async function run() {
       res.send(result);
     });
 
-    // Like or unlike
+    // Like or unlike 
     app.post("/game/:id/like", async (req, res) => {
       const id = req.params.id;
       const {uid} = req.body;
@@ -122,8 +122,12 @@ async function run() {
           $set: {likedBy , totalLikes,},
         }
       );
+ //  Return full info needed for frontend
+      res.send({success: true , 
+        totalLikes, //total likes updated
+        likedBy,  // updated likedBy array
 
-      res.send({message: "success" , result});
+      });
 
 
 
