@@ -153,9 +153,9 @@ http://localhost:8000
 
 
 
-## 🌐 Deployed Server (If Applicable)
+## 🌐 Deployed Server
 
-I will add a live API link here.
+https://chill-gamer-userserver.vercel.app
 
 
 
