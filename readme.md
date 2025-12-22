@@ -155,7 +155,7 @@ http://localhost:8000
 
 ## 🌐 Deployed Server
 
-https://chill-gamer-userserver.vercel.app
+https://gamepulse-server.vercel.app
 
 
 
