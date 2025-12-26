@@ -168,4 +168,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Chill Gamer server is running on port ${port}`);
 });
-
