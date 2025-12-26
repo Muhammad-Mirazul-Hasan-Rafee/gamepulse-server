@@ -3,13 +3,13 @@ const cors = require("cors");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 require("dotenv").config();
 app = express();
-const port = process.env.port || 8000;
+const port = process.env.PORT || 8000;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-const uri = `mongodb+srv://${process.env.db_user}:${process.env.db_pass}@cluster0.vhv77.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.vhv77.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -168,7 +168,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Chill Gamer server is running on port ${port}`);
 });
-
-
-// export app for Vercel (IMPORTANT)
-module.exports = app;
