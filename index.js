@@ -162,7 +162,7 @@ async function run() {
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
-  res.send("Chill-Gamer server is running");
+  res.send("gamepulse server is running");
 });
 
 app.listen(port, () => {
