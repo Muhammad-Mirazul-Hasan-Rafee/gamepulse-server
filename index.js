@@ -144,8 +144,8 @@ async function run() {
       //  Return full info needed for frontend
       res.send({
         success: true,
-        totalLikes, //total likes updated
-        likedBy, // updated likedBy array
+        totalLikes, //Total likes updated
+        likedBy, // Updated likedBy array
       });
     });
 
